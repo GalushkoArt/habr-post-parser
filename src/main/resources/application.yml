@@ -1,0 +1,5 @@
+server:
+  port: 12348
+spring:
+  application:
+    name: POSTPARSER

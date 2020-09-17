@@ -55,7 +55,7 @@ public class HabrPostParserService implements PostParserService {
                 try {
                     doc = getDocumentFromLink(url);
                 } catch (ConnectException e1) {
-                    log.warn("failed to parse " + id + " because " + e1.getMessage());
+                    log.warn("failed to parse {} because {}", id, e1.getMessage());
                     return Optional.empty();
                 }
             }
